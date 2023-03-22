@@ -1,23 +1,26 @@
+console.log("Bienvenidos a segurola y Habana")
 let valorFijo = 12500
 let importadoSi = 7500
 let importadoNo = 1500
 let esTerrestre = 2000
 let esAcuatico = 5500
 
-let mensajeSeguroshabana = "Que tipo de vehículo deseas asgurar? \n" +
+let mensajeSeguroshabana = "Que tipo de vehiculo deseas asgurar? \n" +
                             "1)Vehículo Importado \n" + 
                             "2)Vehículo Nacional \n" + 
                             "3)Vehículo Terrestre \n" + 
                             "4)Vehículo acuatico \n" +                             
                             "\n" 
                         "Ingresa el nro correspondiente:"
-let estoyCotizando = true
+let estoyCotizando = false
 
 
 function iniciarCotizador () {
-    tipoVehículo = prompt (mensajeCotizador)
-    if (tipoVehículo !== 1 && tipoVehículo !== 2 && tipoVehículo !==3){
+    
+    tipoVehículo = prompt (mensajeSeguroshabana)
+    if (tipoVehículo !== "1" && tipoVehículo !== "2" && tipoVehículo !=="3" && tipoVehículo !=="4"){
         alert("Debes ingresar una opción correcta")
+        console.log("Ingresa un vehículo")
         
     } else {
         importadoSi = confirm("el vehiculo es importado?")
@@ -25,7 +28,7 @@ function iniciarCotizador () {
         importadoSi = 24500 
     } 
     
-    esAcuatico = prompt ("Comentanos si tambien posee un vehículo Acuatico")
+    esAcuatico = prompt ("Comentanos si tambien posee un vehiculo Acuatico")
     if (2010 > 20 && 2010 <2023)    {
 
         switch(tipoVehículo) {
@@ -49,3 +52,4 @@ function iniciarCotizador () {
 
 
 }   
+iniciarCotizador()
